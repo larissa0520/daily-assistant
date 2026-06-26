@@ -1,8 +1,8 @@
-# 基于 OpenClaw 的个人 AI 学习助手 — 实践总结
+# 基于 Hermes Agent 的个人 AI 学习助手 — 实践总结
 
 ## 📌 项目定位
 
-基于 OpenClaw（Hermes Agent 平台）+ 飞书（Feishu/Lark）构建的个人 AI 日报系统，自动采集、筛选、总结 AI/Agent 领域技术内容，沉淀到飞书知识库并推送通知。
+基于 Hermes Agent 平台 + 飞书（Feishu/Lark）构建的个人 AI 日报系统，自动采集、筛选、总结 AI/Agent 领域技术内容，沉淀到飞书知识库并推送通知。
 
 ---
 
@@ -28,7 +28,7 @@
 
 **学习日报（6月18日）采集的 8 篇文章：**
 ```
-1. 深入解析：AI Agent、Harness 与 OpenClaw 的核心差异与选型指南 - 云栈社区
+1. 深入解析：AI Agent、Harness 与 Hermes Agent 的核心差异与选型指南 - 云栈社区
 2. Production AI Agent Architecture: Lessons From Building CrewKit
 3. GLM-5.2 - probably the most powerful text-only open weights LLM
 4. From Hugging Face Hub to robot hardware with Strands Agents
@@ -244,7 +244,7 @@ cd ~/ai-daily-assistant && python3 send_feishu_card.py \
 ### 别人如何照着搭
 
 **前提条件：**
-- OpenClaw/Hermes Agent 环境（cron 调度 + 工具集 + 模型接入）
+- Hermes Agent 环境（cron 调度 + 工具集 + 模型接入）
 - 飞书企业账号 + 创建一个飞书应用（App ID/Secret）
 - 本地 Python 3.9+ 运行环境
 

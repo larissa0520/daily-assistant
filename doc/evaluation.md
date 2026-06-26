@@ -1,6 +1,6 @@
 # AI Transformation Workshop — 非专业主题评审证据包
 
-## 项目：基于 OpenClaw 的个人 AI 学习助手
+## 项目：基于 Hermes Agent 的个人 AI 学习助手
 
 ---
 
