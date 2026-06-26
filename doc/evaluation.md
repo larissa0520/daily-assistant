@@ -201,41 +201,46 @@ AI Daily Assistant 完整 5 层架构：Data Sources → Collection & Processing
 ![飞书 Bot 推送记录](./images/feishu-push-records.jpg)
 飞书聊天窗口中的 Bot 推送历史记录，展示每日自动推送的技术日报和学习日报卡片消息，从 6 月 18 日至 6 月 25 日连续运行，每日 08:00-09:00 自动推送。每张卡片包含：彩色主题头、评分文章列表、「📄 飞书原文」直达按钮、底部统计概况。
 
+### 截图 9：Hermes Cron Job 运行状态
+
+![Hermes Cron Job 运行状态](./images/cron-jobs.png)
+4 个 cron job 全部正常运行（技术日报 08:00、学习日报 09:00、Dashboard 09:30、自学升级每 48h），最近运行 last_status 均为 ok，累计执行 143 次。
+
+### 截图 10：代码仓库结构
+
+![代码仓库结构](./images/repo-snapshot.png)
+~/ai-daily-assistant/ 目录，20 个 Python 文件、4,866 行代码，核心模块包括采集引擎、卡片推送、Dashboard 生成、RSS 扫描/源自愈、多渠道推送等。
+
+### 截图 11：故障恢复能力
+
+![故障恢复能力](./images/failure-recovery.png)
+两项重大故障及修复记录：① RSS 死源超时（730s → 30s，24x 提速）；② deepseek-v4-flash 流中断连续失败 19 次（切换 qwen3.6-plus + 截断上下文 + 窗口匹配），修复后稳定运行 24+ 天。
+
+### 截图 12：RSS 扫描耗时对比
+
+![RSS 扫描耗时对比](./images/timing-comparison.png)
+修复前 730 秒（19 源含 5 个死源）vs 修复后 30 秒（14 个健康源），理论提速 295x，实际提速 24x。
+
+### 截图 13：飞书文档沉淀概览
+
+![飞书文档沉淀概览](./images/doc-links.png)
+展示飞书 Wiki 中已沉淀的 14+ 技术日报、15+ 学习日报、50+ 总页面、40+ 卡片推送的文档链接列表。
+
+### 截图 14：微信公众号集成配置
+
+![微信公众号集成配置](./images/wechat-config.png)
+wechat_learning_sources.json 配置：2 个公众号（数字生命卡兹克、code秘密花园），聚焦 Agent 关键词，每号限 10 篇。
+
+### 截图 15：成长记忆文档
+
+![成长记忆文档](./images/growth-memory.jpg)
+飞书 Wiki 系统概览下的「成长记忆」文档，记录从 2026-04-26 启动至今的全部迭代历史：RSS 死源修复（5 月）、模型切换（6 月 2 日）、智囊团引入（6 月 15 日）、排版统一（6 月 18 日）等重大节点。
+
+### 截图 16：自学技能更新日志
+
+![自学技能更新日志](./images/self-learning-log.jpg)
+飞书 Wiki 系统概览下的「自学技能更新日志」，记录 Agent 自学习 cron 每次执行的技能更新，格式：🤔 学到了什么 + 💡 更新了什么。截至 6 月 26 日已积累 10+ 次自学习记录。
+
 ---
 
-## 仍然缺失/需要补充的证据
-
-### 高优先级（建议 Workshop 前准备好）
-
-| 证据 | 形式 | 说明 |
-|------|------|------|
-| **飞书 Wiki 页面截图** | 截图（PNG） | 截取技术时讯/学习博客目录结构，展示文档列表和日期文件夹。能直观证明 50+ 篇文档的沉淀量 |
-| **飞书卡片推送截图** | 截图（PNG） | 截取飞书聊天窗口中的交互卡片，展示卡片样式（绿色/蓝色主题头 + 文章列表 + 按钮） |
-| **日报总结文档截图** | 截图（PNG） | 截取一篇完整的日报总结文档（如 6月18日），展示从标题到智囊团的完整排版 |
-
-### 中优先级
-
-| 证据 | 形式 | 说明 |
-|------|------|------|
-|| **系统概览 Dashboard 截图** | ✅ 已补充 | `doc/images/dashboard-overview.png` |
-| **典型失败日志** | 文本 excerpt | 截取一段 TimeoutError 日志 + 修复后的正常运行日志，展示故障恢复过程 |
-| **学习日报转存文档截图** | 截图（PNG） | 展示一篇完整的转存文档（含原文链接 + 全文内容），证明沉淀质量 |
-
-### 低优先级（锦上添花）
-
-| 证据 | 形式 | 说明 |
-|------|------|------|
-| **Hermes cron job 列表截图** | 截图（PNG） | `cronjob list` 输出展示 4 个 cron job 的状态（schedule + last_status） |
-| **代码仓库截图** | 截图（PNG） | `~/ai-daily-assistant/` 目录列表 + 代码行数统计 |
-| **成长记忆文档截图** | 截图（PNG） | `IUHEw1yJKiEq4MkEYmkcLdVvnXf` 展示从 5 月到 6 月的所有迭代记录 |
-| **WeChat 公众号源配置** | 截图（PNG） | `wechat_learning_sources.json` 展示微信公众号源的配置 |
-| **运行耗时对比** | 截图（PNG） | 修复前后的 RSS 扫描耗时对比（730s vs 2.5s），展示 295x 提速效果 |
-| **飞书文档链接列表** | 文本 | 列出 3-5 篇代表性的飞书文档 URL，方便评审者直接打开查看 |
-
-### 可快速获取的证据
-
-以下证据已有数据源，只需一次操作即可生成：
-1. Dashboard 截图：运行 `cd ~/ai-daily-assistant && python3 generate_dashboard.py`
-2. Cron job 列表：`cronjob list` → 截图
-3. 运行日志分析：`ls ~/.hermes/cron/output/cf18bfb87b4f/ | wc -l` 等
-4. 飞书文档链接：从 doc_cache.json 或最近一次运行日志中提取
+## 补充记录
