@@ -40,6 +40,11 @@
 
 ![学习日报效果](./images/daily-report-learning.png)
 
+### 本地执行证据
+
+![本地cron日志记录](./images/cron-log-evidence.png)
+技术日报 71 个 + 学习日报 43 个日志文件，累计 143 次 cron 执行，每日定时自动触发。
+
 ### 典型结果样例
 
 **学习日报（6月18日）采集的 8 篇文章：**
