@@ -159,37 +159,37 @@
 ## 📸 已采集的截图证据
 
 ### 截图 1：飞书 Wiki 首页目录树
-```
-MEDIA:/Users/kuengroc/.hermes/cache/images/img_33ff3d8e7f24.jpg
-```
+
 展示 Wiki 首页左侧目录树：首页 → 📊 系统概览 / 📁 技术时讯 / 📁 学习博客 三层结构。
+> ⚠️ 原截图已过期，需重新截取。打开飞书 Wiki 首页即可查看。
 
 ### 截图 2：飞书 Wiki 完整目录结构
-```
-MEDIA:/Users/kuengroc/.hermes/cache/images/img_8e0237c4e0df.jpg
-```
+
 展示完整展开的三层目录：
 - 📊 **系统概览** → 成长记忆文档、自学技能更新日志
 - 📁 **技术时讯** → 每日技术日报总结文档 + 日期子文件夹（含转存文档）
 - 📁 **学习博客** → 每日学习日报总结文档 + 日期子文件夹（含转存文档）
+> ⚠️ 原截图已过期，需重新截取。
 
 ### 截图 3：学习日报总结文档（某天）
-```
-MEDIA:/Users/kuengroc/.hermes/cache/images/img_1fb89cfd06b4.jpg
-```
+
 展示学习日报的标准化排版：📊 采集概览（bullet 统计）→ 📚 精选内容（1️⃣编号 + 评分 + 摘要）→ 🧠 智囊团圆桌会议（quote block）
+> ⚠️ 原截图已过期，需重新截取。
 
 ### 截图 4：技术日报总结文档（某天）
-```
-MEDIA:/Users/kuengroc/.hermes/cache/images/img_64a4da3d09c2.jpg
-```
+
 展示技术日报的标准化排版：🏆 今日精选 → 📌 其他值得关注 → 📈 今日趋势 → 🧠 智囊团圆桌会议
+> ⚠️ 原截图已过期，需重新截取。
 
 ### 截图 5：Dashboard 系统概览
-```
-MEDIA:/Users/kuengroc/.hermes/cron/output/dashboard_screenshots/dashboard_20260625_103945.png
-```
+
+![Dashboard 系统概览](./images/dashboard-overview.png)
 Linear 深色风格面板，展示 RSS 13 源、微信公众号 2 个、Exa 搜索 4 个主题、今日精选 8 篇、采集耗时 48s。
+
+### 截图 6：系统架构图
+
+![系统架构图](./images/architecture-diagram.png)
+AI Daily Assistant 完整 5 层架构：Data Sources → Collection & Processing → Wisdom Council → Self-Learning → Output & Delivery。
 
 ---
 

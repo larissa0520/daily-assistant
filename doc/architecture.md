@@ -163,5 +163,5 @@ flowchart TD
 ## 相关资源
 
 - 架构图 HTML: [`doc/ai-daily-assistant-architecture.html`](./ai-daily-assistant-architecture.html)
-- 架构图截图: ![架构图截图](./architecture-diagram.png)
+- 架构图截图: ![架构图截图](./images/architecture-diagram.png)
 - 可视化架构图（浏览器打开 HTML 即可查看）

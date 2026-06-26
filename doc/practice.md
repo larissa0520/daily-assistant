@@ -24,6 +24,14 @@
 | 配置的 RSS 源 | 14 个（早期 19 个，移除 5 个死源后） |
 | 学习日报附加源 | 3 个 Anthropic 补采 + 2 个微信公众号 + 4 组 Exa 语义搜索 |
 
+### 系统架构
+
+![系统架构图](./images/architecture-diagram.png)
+
+### Dashboard 概览
+
+![Dashboard 系统概览](./images/dashboard-overview.png)
+
 ### 典型结果样例
 
 **学习日报（6月18日）采集的 8 篇文章：**
