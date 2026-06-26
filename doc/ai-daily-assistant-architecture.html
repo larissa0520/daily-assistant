@@ -67,7 +67,7 @@
 
     <!-- Main Diagram -->
     <div class="diagram-container">
-      <svg viewBox="0 0 1050 820">
+      <svg viewBox="0 0 1050 940">
         <defs>
           <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
             <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
@@ -180,31 +180,49 @@
 
         <line x1="525" y1="545" x2="525" y2="570" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
-        <!-- ============================= LAYER 4: OUTPUT & DELIVERY ============================= -->
-        <rect x="20" y="575" width="1010" height="160" rx="10" fill="rgba(251, 191, 36, 0.05)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="8,4"/>
-        <text x="32" y="593" fill="#fbbf24" font-size="10" font-weight="600">📤 Output & Delivery</text>
+        <!-- ====================== LAYER 4: SELF-LEARNING & EVOLUTION ====================== -->
+        <rect x="20" y="575" width="1010" height="80" rx="10" fill="rgba(251, 146, 60, 0.06)" stroke="#fb923c" stroke-width="1" stroke-dasharray="8,4"/>
+        <text x="32" y="593" fill="#fb923c" font-size="10" font-weight="600">🔄 Self-Learning & Evolution</text>
+
+        <rect x="40" y="610" width="280" height="35" rx="6" fill="rgba(251, 146, 60, 0.25)" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="180" y="631" fill="white" font-size="10" font-weight="600" text-anchor="middle">自学 Cron 2560b665580b</text>
+
+        <rect x="350" y="610" width="280" height="35" rx="6" fill="rgba(251, 146, 60, 0.25)" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="490" y="631" fill="white" font-size="10" font-weight="600" text-anchor="middle">更新 skills / memory / 成长日志</text>
+
+        <rect x="660" y="610" width="350" height="35" rx="6" fill="rgba(251, 146, 60, 0.25)" stroke="#fb923c" stroke-width="1.5"/>
+        <text x="835" y="631" fill="white" font-size="10" font-weight="600" text-anchor="middle">🤔 学到了什么 → 💡 更新了什么</text>
+
+        <line x1="320" y1="627" x2="348" y2="627" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <line x1="630" y1="627" x2="658" y2="627" stroke="#fb923c" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+        <line x1="525" y1="655" x2="525" y2="675" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+        <!-- ============================= LAYER 5: OUTPUT & DELIVERY ============================= -->
+        <rect x="20" y="680" width="1010" height="160" rx="10" fill="rgba(251, 191, 36, 0.05)" stroke="#fbbf24" stroke-width="1" stroke-dasharray="8,4"/>
+        <text x="32" y="698" fill="#fbbf24" font-size="10" font-weight="600">📤 Output & Delivery</text>
 
         <!-- Feishu Doc -->
-        <rect x="40" y="615" width="220" height="65" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
-        <text x="150" y="637" fill="white" font-size="11" font-weight="600" text-anchor="middle">Feishu Doc</text>
-        <text x="150" y="653" fill="#94a3b8" font-size="8" text-anchor="middle">feishu_doc_create</text>
-        <text x="150" y="667" fill="#94a3b8" font-size="8" text-anchor="middle">feishu_doc_write（正文写入）</text>
+        <rect x="40" y="720" width="220" height="65" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="150" y="742" fill="white" font-size="11" font-weight="600" text-anchor="middle">Feishu Doc</text>
+        <text x="150" y="758" fill="#94a3b8" font-size="8" text-anchor="middle">feishu_doc_create</text>
+        <text x="150" y="772" fill="#94a3b8" font-size="8" text-anchor="middle">feishu_doc_write（正文写入）</text>
 
         <!-- Feishu Card -->
-        <rect x="290" y="615" width="220" height="65" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
-        <text x="400" y="637" fill="white" font-size="11" font-weight="600" text-anchor="middle">Feishu Card 推送</text>
-        <text x="400" y="653" fill="#94a3b8" font-size="8" text-anchor="middle">send_feishu_card.py</text>
-        <text x="400" y="667" fill="#94a3b8" font-size="8" text-anchor="middle">user_access_token 鉴权</text>
+        <rect x="290" y="720" width="220" height="65" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="400" y="742" fill="white" font-size="11" font-weight="600" text-anchor="middle">Feishu Card 推送</text>
+        <text x="400" y="758" fill="#94a3b8" font-size="8" text-anchor="middle">send_feishu_card.py</text>
+        <text x="400" y="772" fill="#94a3b8" font-size="8" text-anchor="middle">user_access_token 鉴权</text>
 
         <!-- Feishu IM Dashboard -->
-        <rect x="540" y="615" width="240" height="65" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
-        <text x="660" y="637" fill="white" font-size="11" font-weight="600" text-anchor="middle">Feishu IM Dashboard</text>
-        <text x="660" y="653" fill="#94a3b8" font-size="8" text-anchor="middle">飞书 Bot 面板</text>
-        <text x="660" y="667" fill="#94a3b8" font-size="8" text-anchor="middle">消息记录查看</text>
+        <rect x="540" y="720" width="240" height="65" rx="6" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+        <text x="660" y="742" fill="white" font-size="11" font-weight="600" text-anchor="middle">Feishu IM Dashboard</text>
+        <text x="660" y="758" fill="#94a3b8" font-size="8" text-anchor="middle">飞书 Bot 面板</text>
+        <text x="660" y="772" fill="#94a3b8" font-size="8" text-anchor="middle">消息记录查看</text>
 
-        <line x1="470" y1="530" x2="470" y2="613" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <line x1="560" y1="530" x2="560" y2="613" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <line x1="660" y1="530" x2="660" y2="613" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <line x1="470" y1="545" x2="470" y2="718" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <line x1="560" y1="545" x2="560" y2="718" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <line x1="660" y1="545" x2="660" y2="718" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 
         <!-- ============================= LEGEND ============================= -->
         <rect x="720" y="10" width="310" height="200" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="#1e293b" stroke-width="1"/>
@@ -228,7 +246,7 @@
         <ul>
           <li>• Hermes Agent (qwen3.6-plus)</li>
           <li>• Feishu Doc API (user_access_token)</li>
-          <li>• Cron Scheduler (2 jobs)</li>
+          <li>• Cron Scheduler (日报 2 jobs + 自学 1 job)</li>
           <li>• IVM: SaaS ~30-60 / Dev ~90-120</li>
           <li>• Step Pipeline: 1 → 1.5 → 2 → 5.5</li>
         </ul>
@@ -244,13 +262,13 @@
         </ul>
       </div>
       <div class="card">
-        <div class="card-header"><div class="card-dot rose"></div><h3>Deliverables</h3></div>
+        <div class="card-header"><div class="card-dot rose"></div><h3>Self-Learning</h3></div>
         <ul>
-          <li>• 日报文档 (feishu_doc_create + write)</li>
-          <li>• 飞书卡片推送 (Feishu Card)</li>
-          <li>• 飞书 IM Dashboard (消息记录)</li>
-          <li>• 智囊团多视角分析</li>
-          <li>• 标准化排版格式</li>
+          <li>• 自学 Cron 定期触发进化会话</li>
+          <li>• 自动更新 skills + memory</li>
+          <li>• 成长日志记录到飞书文档</li>
+          <li>• 格式: 🤔 学到什么 → 💡 更新什么</li>
+          <li>• 闭环: 日报→改进→自学→应用</li>
         </ul>
       </div>
     </div>
