@@ -34,11 +34,11 @@
 
 ### 技术日报效果
 
-![技术日报效果](./images/daily-report-tech.png)
+![技术日报效果](./images/tech-report.jpg)
 
 ### 学习日报效果
 
-![学习日报效果](./images/daily-report-learning.png)
+![学习日报效果](./images/learning-report.jpg)
 
 ### 本地执行证据
 
