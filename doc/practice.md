@@ -32,6 +32,14 @@
 
 ![Dashboard 系统概览](./images/dashboard-overview.png)
 
+### 技术日报效果
+
+![技术日报效果](./images/daily-report-tech.png)
+
+### 学习日报效果
+
+![学习日报效果](./images/daily-report-learning.png)
+
 ### 典型结果样例
 
 **学习日报（6月18日）采集的 8 篇文章：**
