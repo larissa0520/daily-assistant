@@ -158,12 +158,20 @@
 
 ## 📸 已采集的截图证据
 
-### 截图 1：飞书 Wiki 左侧目录树
+> 图例说明：
+> 📸 = 实拍截图（来自飞书页面/聊天窗口的真实截图）
+> ⚙️ 动态生成（根据当前系统实时数据生成的画像图表）
+
+---
+
+### 📸 实拍截图（来自飞书系统）
+
+#### 截图 1：飞书 Wiki 左侧目录树
 
 ![飞书 Wiki 左侧目录树](./images/wiki-directory.jpg)
 飞书 Wiki 左侧目录树，展示三层导航结构：📊 系统概览 / 📁 技术时讯 / 📁 学习博客，每层可展开查看每日文档。
 
-### 截图 2：飞书 Wiki 完整目录结构
+#### 截图 2：飞书 Wiki 完整目录结构
 
 ![飞书 Wiki 完整目录结构](./images/wiki-structure.jpg)
 完整展开 Wiki 目录，清晰展示：
@@ -171,75 +179,79 @@
 - 📁 **技术时讯** → 每日技术日报 + 日期子文件夹（含转存文档）
 - 📁 **学习博客** → 每日学习日报 + 日期子文件夹（含转存文档）
 
-### 截图 3：技术日报总结文档（6月25日）
+#### 截图 3：技术日报总结文档（6月25日）
 
 ![技术日报总结文档](./images/tech-report.jpg)
 展示技术日报的标准化排版：🏆 今日精选 → 📌 其他值得关注 → 📈 今日趋势 → 🧠 智囊团圆桌会议
 
-### 截图 4：学习日报总结文档（6月24日）
+#### 截图 4：学习日报总结文档（6月24日）
 
 ![学习日报总结文档](./images/learning-report.jpg)
 展示学习日报的标准化排版：📊 采集概览 → 📚 精选内容（1️⃣编号 + 评分 + 摘要）→ 🧠 智囊团圆桌会议
 
-### 截图 5：Dashboard 系统概览
-
-![Dashboard 系统概览](./images/dashboard-overview.png)
-Linear 深色风格面板，展示 RSS 13 源、微信公众号 2 个、Exa 搜索 4 个主题、今日精选 8 篇、采集耗时 48s。
-
-### 截图 6：系统架构图
-
-![系统架构图](./images/architecture-diagram.png)
-AI Daily Assistant 完整 5 层架构：Data Sources → Collection & Processing → Wisdom Council → Self-Learning → Output & Delivery。
-
-### 截图 7：Cron 运行日志（本地执行证据）
-
-![Cron 运行日志](./images/cron-log-evidence.png)
-展示技术日报（71 个日志文件）和学习日报（43 个日志文件）在本地 MacBook 上的持续运行记录，累计 143 次 cron 执行，最早可追溯至 2026-04-26。
-
-### 截图 8：飞书 Bot 推送记录（每日自动推送证据）
+#### 截图 5：飞书 Bot 推送记录（每日自动推送证据）
 
 ![飞书 Bot 推送记录](./images/feishu-push-records.jpg)
 飞书聊天窗口中的 Bot 推送历史记录，展示每日自动推送的技术日报和学习日报卡片消息，从 6 月 18 日至 6 月 25 日连续运行，每日 08:00-09:00 自动推送。每张卡片包含：彩色主题头、评分文章列表、「📄 飞书原文」直达按钮、底部统计概况。
 
-### 截图 9：Hermes Cron Job 运行状态
-
-![Hermes Cron Job 运行状态](./images/cron-jobs.png)
-4 个 cron job 全部正常运行（技术日报 08:00、学习日报 09:00、Dashboard 09:30、自学升级每 48h），最近运行 last_status 均为 ok，累计执行 143 次。
-
-### 截图 10：代码仓库结构
-
-![代码仓库结构](./images/repo-snapshot.png)
-~/ai-daily-assistant/ 目录，20 个 Python 文件、4,866 行代码，核心模块包括采集引擎、卡片推送、Dashboard 生成、RSS 扫描/源自愈、多渠道推送等。
-
-### 截图 11：故障恢复能力
-
-![故障恢复能力](./images/failure-recovery.png)
-两项重大故障及修复记录：① RSS 死源超时（730s → 30s，24x 提速）；② deepseek-v4-flash 流中断连续失败 19 次（切换 qwen3.6-plus + 截断上下文 + 窗口匹配），修复后稳定运行 24+ 天。
-
-### 截图 12：RSS 扫描耗时对比
-
-![RSS 扫描耗时对比](./images/timing-comparison.png)
-修复前 730 秒（19 源含 5 个死源）vs 修复后 30 秒（14 个健康源），理论提速 295x，实际提速 24x。
-
-### 截图 13：飞书文档沉淀概览
-
-![飞书文档沉淀概览](./images/doc-links.png)
-展示飞书 Wiki 中已沉淀的 14+ 技术日报、15+ 学习日报、50+ 总页面、40+ 卡片推送的文档链接列表。
-
-### 截图 14：微信公众号集成配置
-
-![微信公众号集成配置](./images/wechat-config.png)
-wechat_learning_sources.json 配置：2 个公众号（数字生命卡兹克、code秘密花园），聚焦 Agent 关键词，每号限 10 篇。
-
-### 截图 15：成长记忆文档
+#### 截图 6：成长记忆文档
 
 ![成长记忆文档](./images/growth-memory.jpg)
 飞书 Wiki 系统概览下的「成长记忆」文档，记录从 2026-04-26 启动至今的全部迭代历史：RSS 死源修复（5 月）、模型切换（6 月 2 日）、智囊团引入（6 月 15 日）、排版统一（6 月 18 日）等重大节点。
 
-### 截图 16：自学技能更新日志
+#### 截图 7：自学技能更新日志
 
 ![自学技能更新日志](./images/self-learning-log.jpg)
 飞书 Wiki 系统概览下的「自学技能更新日志」，记录 Agent 自学习 cron 每次执行的技能更新，格式：🤔 学到了什么 + 💡 更新了什么。截至 6 月 26 日已积累 10+ 次自学习记录。
+
+---
+
+### ⚙️ 动态生成画像（根据当前系统实时数据生成）
+
+#### 截图 8：Dashboard 系统概览
+
+![Dashboard 系统概览](./images/dashboard-overview.png)
+Linear 深色风格面板，展示 RSS 13 源、微信公众号 2 个、Exa 搜索 4 个主题、今日精选 8 篇、采集耗时 48s。
+
+#### 截图 9：系统架构图
+
+![系统架构图](./images/architecture-diagram.png)
+AI Daily Assistant 完整 5 层架构：Data Sources → Collection & Processing → Wisdom Council → Self-Learning → Output & Delivery。
+
+#### 截图 10：Cron 运行日志（本地执行证据）
+
+![Cron 运行日志](./images/cron-log-evidence.png)
+展示技术日报（71 个日志文件）和学习日报（43 个日志文件）在本地 MacBook 上的持续运行记录，累计 143 次 cron 执行，最早可追溯至 2026-04-26。
+
+#### 截图 11：Hermes Cron Job 运行状态
+
+![Hermes Cron Job 运行状态](./images/cron-jobs.png)
+4 个 cron job 全部正常运行（技术日报 08:00、学习日报 09:00、Dashboard 09:30、自学升级每 48h），最近运行 last_status 均为 ok，累计执行 143 次。
+
+#### 截图 12：代码仓库结构
+
+![代码仓库结构](./images/repo-snapshot.png)
+~/ai-daily-assistant/ 目录，20 个 Python 文件、4,866 行代码，核心模块包括采集引擎、卡片推送、Dashboard 生成、RSS 扫描/源自愈、多渠道推送等。
+
+#### 截图 13：故障恢复能力
+
+![故障恢复能力](./images/failure-recovery.png)
+两项重大故障及修复记录：① RSS 死源超时（730s → 30s，24x 提速）；② deepseek-v4-flash 流中断连续失败 19 次（切换 qwen3.6-plus + 截断上下文 + 窗口匹配），修复后稳定运行 24+ 天。
+
+#### 截图 14：RSS 扫描耗时对比
+
+![RSS 扫描耗时对比](./images/timing-comparison.png)
+修复前 730 秒（19 源含 5 个死源）vs 修复后 30 秒（14 个健康源），理论提速 295x，实际提速 24x。
+
+#### 截图 15：飞书文档沉淀概览
+
+![飞书文档沉淀概览](./images/doc-links.png)
+展示飞书 Wiki 中已沉淀的 14+ 技术日报、15+ 学习日报、50+ 总页面、40+ 卡片推送的文档链接列表。
+
+#### 截图 16：微信公众号集成配置
+
+![微信公众号集成配置](./images/wechat-config.png)
+wechat_learning_sources.json 配置：2 个公众号（数字生命卡兹克、code秘密花园），聚焦 Agent 关键词，每号限 10 篇。
 
 ---
 
